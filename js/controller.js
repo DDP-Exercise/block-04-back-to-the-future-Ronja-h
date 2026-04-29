@@ -58,6 +58,15 @@ let clockController = {
         setInterval(clockController.tick, 1000);
     }
 }
+let button = document.getElementById("saveTime");
+button.addEventListener("click", function () {
+    const time = {
+        hours: timeModel.getHours(),
+        minutes: timeModel.getMinutes(),
+        seconds: timeModel.getSeconds()
+    };
+    localStorage.setItem("savedTime", JSON.stringify(time));
+})
 
 clockController.init();
 

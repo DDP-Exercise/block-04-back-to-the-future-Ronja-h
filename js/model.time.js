@@ -1,16 +1,19 @@
 "use strict";
 export const timeModel = {
     time: new Date(),
-    update: function(){
+    update: function () {
         this.time = new Date();
     },
-    getHours: function(){
+    getHours: function () {
         return this.time.getHours();
     },
-    getMinutes: function(){
+    getMinutes: function () {
         return this.time.getMinutes();
     },
-    getSeconds: function(){
+    getSeconds: function () {
         return this.time.getSeconds();
     }
-};
+}
+
+
+
