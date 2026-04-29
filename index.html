@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title>Back to the Future</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="/js/controller.js"></script>
+    <script type="module" src="/js/model.time.js"></script>
+    <script type="module" src="/js/view.analagoue.js"></script>
+    <script type="module" src="/js/view.digital.js"></script>
 </head>
 <body>
-
+<div id="digital">
+</div>
+<div class="analogue">
+    <div class="hand hours"></div>
+    <div class="hand minutes"></div>
+    <div class="hand seconds"></div>
+    <div class="center-dot"></div>
+</div>
+<button id="saveTime">Save the time!</button>
 </body>
 </html>

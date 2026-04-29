@@ -8,3 +8,50 @@ body{
     padding: 0;
     margin: 0;
 }
+
+#digital{
+    color: white;
+    font-size: 50px;
+}
+.analogue {
+    width: 150px;
+    height: 150px;
+    border: 8px solid white;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+}
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.hours {
+    height: 35px;
+    width: 6px;
+    background: blue;
+}
+.minutes {
+    height: 60px;
+    width: 4px;
+    background: hotpink;
+}
+.seconds {
+    height: 70px;
+    width: 2px;
+    background: red;
+}
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#saveTime{
+    padding: 15px;
+    color: white;
+    background-color: deeppink;
+    margin: 25px;
+}
